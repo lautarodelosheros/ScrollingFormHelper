@@ -1,0 +1,6 @@
+framework module Pods_ScrollingFormHelper_Tests {
+  umbrella header "Pods-ScrollingFormHelper_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

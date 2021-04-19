@@ -1,0 +1,6 @@
+framework module ScrollingFormHelper {
+  umbrella header "ScrollingFormHelper-umbrella.h"
+
+  export *
+  module * { export * }
+}

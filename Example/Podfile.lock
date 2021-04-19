@@ -1,0 +1,16 @@
+PODS:
+  - ScrollingFormHelper (0.1.0)
+
+DEPENDENCIES:
+  - ScrollingFormHelper (from `../`)
+
+EXTERNAL SOURCES:
+  ScrollingFormHelper:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ScrollingFormHelper: ca42613e36a51a831aecd55fc9e8377354e56f72
+
+PODFILE CHECKSUM: 864b67664801173e0bb80beb84447518b66c3975
+
+COCOAPODS: 1.10.1

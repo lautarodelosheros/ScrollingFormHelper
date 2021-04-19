@@ -1,0 +1,22 @@
+{
+  "name": "ScrollingFormHelper",
+  "version": "0.1.0",
+  "summary": "A short description of ScrollingFormHelper.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/lautarodelosheros/ScrollingFormHelper",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "lautarodelosheros": "lautarodelosheros@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/lautarodelosheros/ScrollingFormHelper.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "ScrollingFormHelper/Classes/**/*"
+}
