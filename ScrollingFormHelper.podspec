@@ -10,6 +10,7 @@ Pod::Spec.new do |s|
   s.name             = 'ScrollingFormHelper'
   s.version          = '0.1.0'
   s.summary          = 'A simple library to handle scrolling on forms and the keyboard.'
+  s.swift_versions   = '4.0'
 
   s.description      = <<-DESC
 Use this library to handle one or multiple text fields that trigger the keyboard, so they don't get behind it or inaccessible.
@@ -18,7 +19,7 @@ Use this library to handle one or multiple text fields that trigger the keyboard
   s.homepage         = 'https://github.com/lautarodelosheros/ScrollingFormHelper.git'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'lautarodelosheros' => 'lautarodelosheros@gmail.com' }
-  s.source           = { :git => 'git@github.com:lautarodelosheros/ScrollingFormHelper.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/lautarodelosheros/ScrollingFormHelper.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '9.0'
 
