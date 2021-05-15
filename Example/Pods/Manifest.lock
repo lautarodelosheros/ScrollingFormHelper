@@ -1,5 +1,5 @@
 PODS:
-  - ScrollingFormHelper (0.1.0)
+  - ScrollingFormHelper (0.1.1)
 
 DEPENDENCIES:
   - ScrollingFormHelper (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ScrollingFormHelper: ca42613e36a51a831aecd55fc9e8377354e56f72
+  ScrollingFormHelper: fabadff6f41e20ebdcded0044cd47bd92edf3060
 
 PODFILE CHECKSUM: 864b67664801173e0bb80beb84447518b66c3975
 

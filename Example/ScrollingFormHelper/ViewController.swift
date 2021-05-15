@@ -70,6 +70,6 @@ class ViewController: UIViewController {
 extension ViewController: UITextFieldDelegate {
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        scrollingFormHelper?.currentTextField = textField
+        scrollingFormHelper?.currentView = textField
     }
 }

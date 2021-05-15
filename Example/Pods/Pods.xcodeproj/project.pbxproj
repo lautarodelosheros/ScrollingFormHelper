@@ -8,26 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		05CC30893D44278A0E6EBDC388DAFC80 /* Pods-ScrollingFormHelper_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 14DDE2B0C9B9F2E640E491BAAA46CBF4 /* Pods-ScrollingFormHelper_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0622CDA16BCB54905D8E70E73633E167 /* ScrollingFormHelper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6AA387C583781F3B70B1618140733C /* ScrollingFormHelper-dummy.m */; };
-		19190604B5AED496F77355FB23E4406E /* ScrollingFormHelper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E0EBA1448268C2C65D56B20D01FF568D /* ScrollingFormHelper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		47E02E6F140A187BBA264F9E57E7601B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		101B44DD005983041D7DDEBCEEC67BC1 /* NonScrollingFormHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E474A38D4B227554C31FAD2669C5E1EB /* NonScrollingFormHelper.swift */; };
+		17C6ED819FC8AD3B5F2106E022678B25 /* ScrollingFormHelper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BB2FA986A397AB27B266455350AA754 /* ScrollingFormHelper-dummy.m */; };
 		64886BB7D6758D4532E9E8821115046E /* Pods-ScrollingFormHelper_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B36DBCA8DD339C4603DFBD62E38D5BF /* Pods-ScrollingFormHelper_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7386A531262DC23100F0E995 /* ScrollingFormHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7386A530262DC23100F0E995 /* ScrollingFormHelper.swift */; };
+		728AEE95DF64F4C0E2D2FDC0ECA3CAB3 /* ScrollingFormHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD152FAF540DB870BD4F1EBFCFBB96A7 /* ScrollingFormHelper.swift */; };
 		862148D45621B3EBEB4BAD42C0835B08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		94909F9DDFE3E417F73A0B6F82A6B9E6 /* Pods-ScrollingFormHelper_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 406F1BF3B244E432B823C32F6F024797 /* Pods-ScrollingFormHelper_Tests-dummy.m */; };
+		A3C428012E691315928254C550083C75 /* ScrollingFormHelper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 03111AF6FEF44623F6C8F5EE0F60446D /* ScrollingFormHelper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A4219240237947ABD4A69CA708294409 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		C5D816AC83676D8C7FD40C42DEC68319 /* Pods-ScrollingFormHelper_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5788FA4B0BBEDA51EF794B26B2E2D32D /* Pods-ScrollingFormHelper_Example-dummy.m */; };
+		CB6888F5DAE5AFC619D8F8D8F880C490 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9054790E788D7AC18E5BDEE84D879BB2 /* PBXContainerItemProxy */ = {
+		7C68BF1BBF3D1B11FA65E65F25E6C894 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E036651F1ED36A2EB1A67742D24EDE44;
 			remoteInfo = ScrollingFormHelper;
 		};
-		D669D5903D397D02CB14BE6ED5F15F2A /* PBXContainerItemProxy */ = {
+		FD3686D1AD05202406238B9DC5A6F0C9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -37,39 +38,40 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03111AF6FEF44623F6C8F5EE0F60446D /* ScrollingFormHelper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ScrollingFormHelper-umbrella.h"; sourceTree = "<group>"; };
 		04DD234C5372BCA1A0C1DBB7D8216BFF /* Pods-ScrollingFormHelper_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ScrollingFormHelper_Example-Info.plist"; sourceTree = "<group>"; };
-		0A48650EC6AC9B12AB954BF1461CF689 /* ScrollingFormHelper.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ScrollingFormHelper.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		0585227D148EBEB650BAEF4122C0F0D2 /* ScrollingFormHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ScrollingFormHelper.debug.xcconfig; sourceTree = "<group>"; };
 		14DDE2B0C9B9F2E640E491BAAA46CBF4 /* Pods-ScrollingFormHelper_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ScrollingFormHelper_Tests-umbrella.h"; sourceTree = "<group>"; };
-		195EFF4F555CABA02A9918AB0759781A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		1B36DBCA8DD339C4603DFBD62E38D5BF /* Pods-ScrollingFormHelper_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ScrollingFormHelper_Example-umbrella.h"; sourceTree = "<group>"; };
+		1BB2FA986A397AB27B266455350AA754 /* ScrollingFormHelper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ScrollingFormHelper-dummy.m"; sourceTree = "<group>"; };
 		29A6505210088DC74DE6F241ACAEA04A /* Pods-ScrollingFormHelper_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScrollingFormHelper_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		2AE510C369BFA528D16F28F1EFDDD93E /* Pods-ScrollingFormHelper_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ScrollingFormHelper_Example-frameworks.sh"; sourceTree = "<group>"; };
-		3750555D2A6036D2B86D5F29397DA0A6 /* ScrollingFormHelper-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ScrollingFormHelper-Info.plist"; sourceTree = "<group>"; };
+		313F6C73AE5A54A183F0E56785E9A950 /* ScrollingFormHelper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ScrollingFormHelper-prefix.pch"; sourceTree = "<group>"; };
 		3EF0746ED0CD18567AE222695008BC9D /* Pods-ScrollingFormHelper_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScrollingFormHelper_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		406F1BF3B244E432B823C32F6F024797 /* Pods-ScrollingFormHelper_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ScrollingFormHelper_Tests-dummy.m"; sourceTree = "<group>"; };
-		42870D2CB80540425498512B6A05F30A /* ScrollingFormHelper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ScrollingFormHelper.modulemap; sourceTree = "<group>"; };
 		49D825F2BC829CE47D0FDD54905BFDDE /* Pods-ScrollingFormHelper_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ScrollingFormHelper_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		559043459A33C2A7447960D58C4E7343 /* Pods_ScrollingFormHelper_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScrollingFormHelper_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		559043459A33C2A7447960D58C4E7343 /* Pods_ScrollingFormHelper_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ScrollingFormHelper_Example.framework; path = "Pods-ScrollingFormHelper_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5788FA4B0BBEDA51EF794B26B2E2D32D /* Pods-ScrollingFormHelper_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ScrollingFormHelper_Example-dummy.m"; sourceTree = "<group>"; };
-		5B9332C8158CAC515077807BA3BE98A9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5C8A4ECBFF92186218BD8AD12D375EC4 /* Pods-ScrollingFormHelper_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScrollingFormHelper_Example.release.xcconfig"; sourceTree = "<group>"; };
+		5DF59DFC8C6FBB47249CC858C765A94A /* ScrollingFormHelper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ScrollingFormHelper.modulemap; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7386A530262DC23100F0E995 /* ScrollingFormHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ScrollingFormHelper.swift; path = ScrollingFormHelper/Classes/ScrollingFormHelper.swift; sourceTree = "<group>"; };
-		77FDB763F8B07DFB62F3B0CCDA155407 /* ScrollingFormHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ScrollingFormHelper.release.xcconfig; sourceTree = "<group>"; };
-		7BD849C9FCFD8C59CFFB554E65AF1ABF /* Pods_ScrollingFormHelper_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScrollingFormHelper_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		767D7B894F715CE1D9268BE8B60E186E /* ScrollingFormHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ScrollingFormHelper.release.xcconfig; sourceTree = "<group>"; };
+		7BD849C9FCFD8C59CFFB554E65AF1ABF /* Pods_ScrollingFormHelper_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ScrollingFormHelper_Tests.framework; path = "Pods-ScrollingFormHelper_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D2D5491B2284F58B46F8004D4E790DF /* ScrollingFormHelper.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ScrollingFormHelper.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		80BB735E86DE9D973537A3A43C7E5CB5 /* Pods-ScrollingFormHelper_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScrollingFormHelper_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		892EE6C2EB537ABE7BCA270DC2B13057 /* ScrollingFormHelper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ScrollingFormHelper-prefix.pch"; sourceTree = "<group>"; };
 		9377CA84B1CE96519224FFD8B6CB07EE /* Pods-ScrollingFormHelper_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ScrollingFormHelper_Tests.modulemap"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C4070AADEDABF3C1FA3104B595A24FCB /* ScrollingFormHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ScrollingFormHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B500E0BAE6A85A170FC8E8E4AB98B00B /* ScrollingFormHelper-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ScrollingFormHelper-Info.plist"; sourceTree = "<group>"; };
+		C4070AADEDABF3C1FA3104B595A24FCB /* ScrollingFormHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ScrollingFormHelper.framework; path = ScrollingFormHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8ECF3AAD9B25D867C35063257A585A2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		CB1C81DAA0315BC42FD29F2F63C6561C /* Pods-ScrollingFormHelper_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ScrollingFormHelper_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		CDAE5473AB65BA65EC050972AACCF068 /* Pods-ScrollingFormHelper_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ScrollingFormHelper_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		CDDE5AF72333415608FD427CE2F49968 /* ScrollingFormHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ScrollingFormHelper.debug.xcconfig; sourceTree = "<group>"; };
 		D22EE21706D971B81970C8BD58F4CCF0 /* Pods-ScrollingFormHelper_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ScrollingFormHelper_Tests-Info.plist"; sourceTree = "<group>"; };
 		D275EC226B3AC72C4630998229F6F502 /* Pods-ScrollingFormHelper_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ScrollingFormHelper_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E0EBA1448268C2C65D56B20D01FF568D /* ScrollingFormHelper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ScrollingFormHelper-umbrella.h"; sourceTree = "<group>"; };
+		E17C69D73015E39D657CBEC077163390 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		E474A38D4B227554C31FAD2669C5E1EB /* NonScrollingFormHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NonScrollingFormHelper.swift; path = ScrollingFormHelper/Classes/NonScrollingFormHelper.swift; sourceTree = "<group>"; };
 		F148A2FFA5D017DB5A58848DC2D6D6B4 /* Pods-ScrollingFormHelper_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ScrollingFormHelper_Example.modulemap"; sourceTree = "<group>"; };
-		FE6AA387C583781F3B70B1618140733C /* ScrollingFormHelper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ScrollingFormHelper-dummy.m"; sourceTree = "<group>"; };
+		FD152FAF540DB870BD4F1EBFCFBB96A7 /* ScrollingFormHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollingFormHelper.swift; path = ScrollingFormHelper/Classes/ScrollingFormHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,19 +83,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8F0523A03328574A7E28E0C5244C1215 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				47E02E6F140A187BBA264F9E57E7601B /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		BFF4C43EEA5375596ED26FC330F4ADBA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A4219240237947ABD4A69CA708294409 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEDDD4B76A0091E4DE185862FDC3C14F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB6888F5DAE5AFC619D8F8D8F880C490 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,12 +118,39 @@
 			path = "Target Support Files/Pods-ScrollingFormHelper_Tests";
 			sourceTree = "<group>";
 		};
+		533BF6D9D9B0B3A226B333626CF386FC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5DF59DFC8C6FBB47249CC858C765A94A /* ScrollingFormHelper.modulemap */,
+				1BB2FA986A397AB27B266455350AA754 /* ScrollingFormHelper-dummy.m */,
+				B500E0BAE6A85A170FC8E8E4AB98B00B /* ScrollingFormHelper-Info.plist */,
+				313F6C73AE5A54A183F0E56785E9A950 /* ScrollingFormHelper-prefix.pch */,
+				03111AF6FEF44623F6C8F5EE0F60446D /* ScrollingFormHelper-umbrella.h */,
+				0585227D148EBEB650BAEF4122C0F0D2 /* ScrollingFormHelper.debug.xcconfig */,
+				767D7B894F715CE1D9268BE8B60E186E /* ScrollingFormHelper.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ScrollingFormHelper";
+			sourceTree = "<group>";
+		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		67DD6F258652C481FE89248740C675F6 /* ScrollingFormHelper */ = {
+			isa = PBXGroup;
+			children = (
+				E474A38D4B227554C31FAD2669C5E1EB /* NonScrollingFormHelper.swift */,
+				FD152FAF540DB870BD4F1EBFCFBB96A7 /* ScrollingFormHelper.swift */,
+				D7F59C4BC93F01F2CECC858347F21A43 /* Pod */,
+				533BF6D9D9B0B3A226B333626CF386FC /* Support Files */,
+			);
+			name = ScrollingFormHelper;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		68CF8D3DC39B453FB9B2E60B2B3373A5 /* Targets Support Files */ = {
@@ -133,17 +162,6 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		7012F646F9D6F77CC66D8122C9AE2EB1 /* ScrollingFormHelper */ = {
-			isa = PBXGroup;
-			children = (
-				FDBA5998EEB1547F26CDAF97CFA0E009 /* Pod */,
-				A3AD82693355519A08F7126A1B6C30C0 /* Support Files */,
-				7386A530262DC23100F0E995 /* ScrollingFormHelper.swift */,
-			);
-			name = ScrollingFormHelper;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		93A88107A8CCCEF480F486650108DDE8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,29 +170,6 @@
 				C4070AADEDABF3C1FA3104B595A24FCB /* ScrollingFormHelper.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		9B5490B595E23F7F89AD9222A65847AA /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				7012F646F9D6F77CC66D8122C9AE2EB1 /* ScrollingFormHelper */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		A3AD82693355519A08F7126A1B6C30C0 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				42870D2CB80540425498512B6A05F30A /* ScrollingFormHelper.modulemap */,
-				FE6AA387C583781F3B70B1618140733C /* ScrollingFormHelper-dummy.m */,
-				3750555D2A6036D2B86D5F29397DA0A6 /* ScrollingFormHelper-Info.plist */,
-				892EE6C2EB537ABE7BCA270DC2B13057 /* ScrollingFormHelper-prefix.pch */,
-				E0EBA1448268C2C65D56B20D01FF568D /* ScrollingFormHelper-umbrella.h */,
-				CDDE5AF72333415608FD427CE2F49968 /* ScrollingFormHelper.debug.xcconfig */,
-				77FDB763F8B07DFB62F3B0CCDA155407 /* ScrollingFormHelper.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/ScrollingFormHelper";
 			sourceTree = "<group>";
 		};
 		B8400DF635A318F4B88D1BBB1612796F /* Pods-ScrollingFormHelper_Example */ = {
@@ -198,7 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				9B5490B595E23F7F89AD9222A65847AA /* Development Pods */,
+				E61C719DB91916F91754083CFA92766D /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				93A88107A8CCCEF480F486650108DDE8 /* Products */,
 				68CF8D3DC39B453FB9B2E60B2B3373A5 /* Targets Support Files */,
@@ -213,14 +208,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FDBA5998EEB1547F26CDAF97CFA0E009 /* Pod */ = {
+		D7F59C4BC93F01F2CECC858347F21A43 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				195EFF4F555CABA02A9918AB0759781A /* LICENSE */,
-				5B9332C8158CAC515077807BA3BE98A9 /* README.md */,
-				0A48650EC6AC9B12AB954BF1461CF689 /* ScrollingFormHelper.podspec */,
+				E17C69D73015E39D657CBEC077163390 /* LICENSE */,
+				C8ECF3AAD9B25D867C35063257A585A2 /* README.md */,
+				7D2D5491B2284F58B46F8004D4E790DF /* ScrollingFormHelper.podspec */,
 			);
 			name = Pod;
+			sourceTree = "<group>";
+		};
+		E61C719DB91916F91754083CFA92766D /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				67DD6F258652C481FE89248740C675F6 /* ScrollingFormHelper */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,19 +237,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		552435C446AEA7E37781CAB5A101C01B /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				19190604B5AED496F77355FB23E4406E /* ScrollingFormHelper-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		66727F2291384F460BB4B1CB61995F72 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				64886BB7D6758D4532E9E8821115046E /* Pods-ScrollingFormHelper_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76FE349CB51BA725CD389D2DACE8BC3A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3C428012E691315928254C550083C75 /* ScrollingFormHelper-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +268,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				FED9759F1A6D0A5774896CB8F36757E7 /* PBXTargetDependency */,
+				5F2935FAC9C557B0CD9F9C04AC376CD2 /* PBXTargetDependency */,
 			);
 			name = "Pods-ScrollingFormHelper_Tests";
 			productName = "Pods-ScrollingFormHelper_Tests";
@@ -284,7 +287,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				C99A86E5BB6AD5AA12B09F56CAC5A474 /* PBXTargetDependency */,
+				8C26CDCA0DF041B5E68584A24D847CB9 /* PBXTargetDependency */,
 			);
 			name = "Pods-ScrollingFormHelper_Example";
 			productName = "Pods-ScrollingFormHelper_Example";
@@ -293,12 +296,12 @@
 		};
 		E036651F1ED36A2EB1A67742D24EDE44 /* ScrollingFormHelper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1F897E6E1148EB62F74EE12D31D2DFBF /* Build configuration list for PBXNativeTarget "ScrollingFormHelper" */;
+			buildConfigurationList = B62DE5B9B36E0800D2C264A8F21A8364 /* Build configuration list for PBXNativeTarget "ScrollingFormHelper" */;
 			buildPhases = (
-				552435C446AEA7E37781CAB5A101C01B /* Headers */,
-				2BC9E6D8A08ABF3576BCA54D7727E7E4 /* Sources */,
-				8F0523A03328574A7E28E0C5244C1215 /* Frameworks */,
-				6ACF8768271ECABE7479373AF6713690 /* Resources */,
+				76FE349CB51BA725CD389D2DACE8BC3A /* Headers */,
+				3A441AE388AA2D63B372C59989289BED /* Sources */,
+				EEDDD4B76A0091E4DE185862FDC3C14F /* Frameworks */,
+				D418D0FF64BF2F061334ECAE17E5F74E /* Resources */,
 			);
 			buildRules = (
 			);
@@ -346,14 +349,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6ACF8768271ECABE7479373AF6713690 /* Resources */ = {
+		CAA9AFB452C178C7800D03B9017FD233 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CAA9AFB452C178C7800D03B9017FD233 /* Resources */ = {
+		D418D0FF64BF2F061334ECAE17E5F74E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -371,12 +374,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2BC9E6D8A08ABF3576BCA54D7727E7E4 /* Sources */ = {
+		3A441AE388AA2D63B372C59989289BED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7386A531262DC23100F0E995 /* ScrollingFormHelper.swift in Sources */,
-				0622CDA16BCB54905D8E70E73633E167 /* ScrollingFormHelper-dummy.m in Sources */,
+				101B44DD005983041D7DDEBCEEC67BC1 /* NonScrollingFormHelper.swift in Sources */,
+				17C6ED819FC8AD3B5F2106E022678B25 /* ScrollingFormHelper-dummy.m in Sources */,
+				728AEE95DF64F4C0E2D2FDC0ECA3CAB3 /* ScrollingFormHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,17 +395,17 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C99A86E5BB6AD5AA12B09F56CAC5A474 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ScrollingFormHelper;
-			target = E036651F1ED36A2EB1A67742D24EDE44 /* ScrollingFormHelper */;
-			targetProxy = 9054790E788D7AC18E5BDEE84D879BB2 /* PBXContainerItemProxy */;
-		};
-		FED9759F1A6D0A5774896CB8F36757E7 /* PBXTargetDependency */ = {
+		5F2935FAC9C557B0CD9F9C04AC376CD2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-ScrollingFormHelper_Example";
 			target = 67B37BB9EA4A4F354DA473AEC63CC955 /* Pods-ScrollingFormHelper_Example */;
-			targetProxy = D669D5903D397D02CB14BE6ED5F15F2A /* PBXContainerItemProxy */;
+			targetProxy = FD3686D1AD05202406238B9DC5A6F0C9 /* PBXContainerItemProxy */;
+		};
+		8C26CDCA0DF041B5E68584A24D847CB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ScrollingFormHelper;
+			target = E036651F1ED36A2EB1A67742D24EDE44 /* ScrollingFormHelper */;
+			targetProxy = 7C68BF1BBF3D1B11FA65E65F25E6C894 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -504,9 +508,9 @@
 			};
 			name = Debug;
 		};
-		4B405B030C6BE73D6E94DA294CEF70CD /* Debug */ = {
+		29FA4B5CC65298E50B6A26F0823115D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CDDE5AF72333415608FD427CE2F49968 /* ScrollingFormHelper.debug.xcconfig */;
+			baseConfigurationReference = 0585227D148EBEB650BAEF4122C0F0D2 /* ScrollingFormHelper.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -527,43 +531,12 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		4D5B4A8A753E4107F81BC2AD2F99B309 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 77FDB763F8B07DFB62F3B0CCDA155407 /* ScrollingFormHelper.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ScrollingFormHelper/ScrollingFormHelper-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ScrollingFormHelper/ScrollingFormHelper-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ScrollingFormHelper/ScrollingFormHelper.modulemap";
-				PRODUCT_MODULE_NAME = ScrollingFormHelper;
-				PRODUCT_NAME = ScrollingFormHelper;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		73980DC57357BFBD11E1A6E34DAD5DC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -596,6 +569,37 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		B3A5FEAB47154C55D75CB86F80A3AEF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 767D7B894F715CE1D9268BE8B60E186E /* ScrollingFormHelper.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ScrollingFormHelper/ScrollingFormHelper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ScrollingFormHelper/ScrollingFormHelper-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ScrollingFormHelper/ScrollingFormHelper.modulemap";
+				PRODUCT_MODULE_NAME = ScrollingFormHelper;
+				PRODUCT_NAME = ScrollingFormHelper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -652,7 +656,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -727,15 +732,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1F897E6E1148EB62F74EE12D31D2DFBF /* Build configuration list for PBXNativeTarget "ScrollingFormHelper" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4B405B030C6BE73D6E94DA294CEF70CD /* Debug */,
-				4D5B4A8A753E4107F81BC2AD2F99B309 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -750,6 +746,15 @@
 			buildConfigurations = (
 				18AF8D0E362C0E88BB0FBE901A947C53 /* Debug */,
 				F9F0550A3A8C4534074BF1DA8BBC01C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B62DE5B9B36E0800D2C264A8F21A8364 /* Build configuration list for PBXNativeTarget "ScrollingFormHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29FA4B5CC65298E50B6A26F0823115D1 /* Debug */,
+				B3A5FEAB47154C55D75CB86F80A3AEF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
