@@ -39,7 +39,7 @@ Then set the currentTextField attribute on textFieldDidBeginEditing (You need to
 ```swift
 extension ViewController: UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        scrollingFormHelper?.currentTextField = textField
+        scrollingFormHelper?.currentView = textField
     }
 }
 ```
