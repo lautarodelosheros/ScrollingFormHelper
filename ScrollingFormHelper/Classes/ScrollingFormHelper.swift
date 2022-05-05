@@ -99,7 +99,7 @@ public class ScrollingFormHelper {
         let offsetForNotchDevices: CGFloat = 10
         let offsetForNonNotchDevices: CGFloat = 44
         guard #available(iOS 11.0, *),
-              let window = UIApplication.shared.windows.filter({$0.isKeyWindow}).first
+              let window = UIApplication.shared.keyWindow
         else {
             return offsetForNonNotchDevices
         }
