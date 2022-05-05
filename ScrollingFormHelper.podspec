@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ScrollingFormHelper'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'A simple library to handle scrolling on forms and the keyboard.'
   s.swift_versions   = '5.0'
 
