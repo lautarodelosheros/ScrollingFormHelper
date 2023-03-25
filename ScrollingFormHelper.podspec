@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ScrollingFormHelper'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'A simple library to handle scrolling on forms and the keyboard.'
   s.swift_versions   = '5.0'
 
@@ -23,5 +23,5 @@ Use this library to handle one or multiple text fields that trigger the keyboard
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'ScrollingFormHelper/Classes/**/*'
+  s.source_files = 'Sources/ScrollingFormHelper/Classes/**/*'
 end
