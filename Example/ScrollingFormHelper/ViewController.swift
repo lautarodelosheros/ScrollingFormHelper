@@ -39,7 +39,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        scrollingFormHelper = ScrollingFormHelper(scrollView: scrollView, contentView: stackView, shouldDismissKeyboardOnTap: true)
+        scrollingFormHelper = ScrollingFormHelper(
+            scrollView: scrollView,
+            shouldDismissKeyboardOnTap: true
+        )
         setupTextFields()
     }
     

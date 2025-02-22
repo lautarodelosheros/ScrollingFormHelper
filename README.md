@@ -14,7 +14,9 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-ScrollingFormHelper is available through [CocoaPods](https://cocoapods.org). To install
+ScrollingFormHelper is available through Swift Package Manager, simply add it as a new dependency.
+
+ScrollingFormHelper is also available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
@@ -29,8 +31,8 @@ Initialize an instance of ScrollingFormHelper on the view controller's viewDidLo
 override func viewDidLoad() {
     super.viewDidLoad()
     
-    scrollingFormHelper = ScrollingFormHelper(scrollView: scrollView, contentView: stackView, shouldDismissKeyboardOnTap: true)
-    setupTextFields()
+    scrollingFormHelper = ScrollingFormHelper(scrollView: scrollView, shouldDismissKeyboardOnTap: true)
+    textField.delegate = self
 }
 ```
 
