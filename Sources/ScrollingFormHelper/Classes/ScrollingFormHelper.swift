@@ -18,34 +18,42 @@ public class ScrollingFormHelper {
         }
     }
     
-    // The scroll view that you want to manage
+    // The scroll view that you want to manage, make sure it has only one subview
     private weak var scrollView: UIScrollView?
-    // The child view of the scroll view that is the container
-    private weak var contentView: UIView?
     
-    private var contentViewLastItemMaxY: CGFloat = 0.0
     private var keyboardHeight: CGFloat = 0.0
     
-    public init(scrollView: UIScrollView, contentView: UIView, shouldDismissKeyboardOnTap: Bool = false) {
+    public init(scrollView: UIScrollView, shouldDismissKeyboardOnTap: Bool = false) {
         self.scrollView = scrollView
-        self.contentView = contentView
         registerForKeyboardNotifications()
         
         if shouldDismissKeyboardOnTap {
-            let tap = UITapGestureRecognizer(target: contentView, action: #selector(UIView.endEditing))
+            let tap = UITapGestureRecognizer(
+                target: scrollView,
+                action: #selector(UIView.endEditing)
+            )
             tap.cancelsTouchesInView = false
-            contentView.addGestureRecognizer(tap)
+            scrollView.addGestureRecognizer(tap)
         }
     }
     
     private func registerForKeyboardNotifications() {
-        NotificationCenter.default.addObserver(self, selector: #selector(onKeyboardChangeFrame(_:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(onKeyboardDisappear(_:)), name: UIResponder.keyboardDidHideNotification, object: nil)
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(onKeyboardChangeFrame(_:)),
+            name: UIResponder.keyboardWillChangeFrameNotification,
+            object: nil
+        )
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(onKeyboardDisappear(_:)),
+            name: UIResponder.keyboardDidHideNotification,
+            object: nil
+        )
     }
     
     deinit {
-        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
-        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardDidHideNotification, object: nil)
+        NotificationCenter.default.removeObserver(self)
     }
     
     @objc private func onKeyboardChangeFrame(_ notification: NSNotification) {
@@ -69,50 +77,43 @@ public class ScrollingFormHelper {
     }
     
     private func scrollTo(view: UIView) {
-        guard let lastItem = contentView?.subviews.last,
-              let scrollView = scrollView else {
+        guard let scrollView = scrollView,
+              let lastItem = scrollView.subviews.first?.subviews.last,
+              keyboardHeight > 0
+        else {
             return
         }
         let keyboardHeightFromTop = scrollView.frame.height - keyboardHeight
         
-        contentViewLastItemMaxY = lastItem.frame.origin.y + lastItem.frame.height
+        let scrollViewEmptySpaceFromBottom = scrollView.frame.height - scrollView.contentSize.height
+        let contentViewLastItemMaxY = view.convert(
+            lastItem.frame.origin,
+            to: scrollView
+        ).y + lastItem.frame.height + scrollViewEmptySpaceFromBottom
         
         var contentInset = min(keyboardHeight, contentViewLastItemMaxY - keyboardHeightFromTop)
         if contentInset < 0 {
             contentInset = 0
         }
         
-        var scrollPosition = view.convert(view.bounds.origin, to: scrollView).y - keyboardHeightFromTop + offsetAdjustment()
+        var scrollPosition = scrollView.convert(
+            view.frame.origin,
+            to: scrollView
+        ).y + view.frame.height - keyboardHeightFromTop
         if scrollPosition < 0 {
             scrollPosition = 0
         }
         
-        let newInsets = UIEdgeInsets(top: scrollView.contentInset.top, left: scrollView.contentInset.left, bottom: contentInset, right: scrollView.contentInset.right)
+        let newInsets = UIEdgeInsets(
+            top: scrollView.contentInset.top,
+            left: scrollView.contentInset.left,
+            bottom: contentInset,
+            right: scrollView.contentInset.right
+        )
         DispatchQueue.main.async {
             self.scrollView?.contentInset = newInsets
             self.scrollView?.scrollIndicatorInsets = newInsets
             self.scrollView?.setContentOffset(CGPoint(x: 0, y: scrollPosition), animated: true)
-        }
-    }
-    
-    private func offsetAdjustment() -> CGFloat {
-        let offsetForNotchDevices: CGFloat = 10
-        let offsetForNonNotchDevices: CGFloat = 44
-        guard #available(iOS 11.0, *),
-              let window = UIApplication.shared.keyWindow
-        else {
-            return offsetForNonNotchDevices
-        }
-        if UIDevice.current.orientation.isPortrait {
-            if window.safeAreaInsets.top >= 44 {
-                return offsetForNotchDevices
-            }
-            return offsetForNonNotchDevices
-        } else {
-            if window.safeAreaInsets.left > 0 || window.safeAreaInsets.right > 0 {
-                return offsetForNotchDevices
-            }
-            return offsetForNonNotchDevices
         }
     }
 }
