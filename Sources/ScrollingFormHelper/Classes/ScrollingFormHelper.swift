@@ -96,9 +96,8 @@ public class ScrollingFormHelper {
             contentInset = 0
         }
         
-        var scrollPosition = scrollView.convert(
-            view.frame.origin,
-            to: scrollView
+        var scrollPosition = view.getOriginRelativeTo(
+            view: scrollView
         ).y + view.frame.height - keyboardHeightFromTop
         if scrollPosition < 0 {
             scrollPosition = 0
@@ -115,5 +114,16 @@ public class ScrollingFormHelper {
             self.scrollView?.scrollIndicatorInsets = newInsets
             self.scrollView?.setContentOffset(CGPoint(x: 0, y: scrollPosition), animated: true)
         }
+    }
+}
+
+public extension UIView {
+    
+    func getOriginRelativeTo(view: UIView, origin: CGPoint? = nil) -> CGPoint {
+        let origin = origin ?? superview?.convert(self.frame.origin, to: view) ?? frame.origin
+        guard let superview, superview != view else {
+            return origin
+        }
+        return superview.getOriginRelativeTo(view: view, origin: origin)
     }
 }
