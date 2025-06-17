@@ -17,6 +17,9 @@ public class ScrollingFormHelper {
             scrollTo(view: currentView)
         }
     }
+
+    // Offset that will be considered for the scroll view's bottom offset and the scroll offset to the currentView
+    public var customOffset: CGFloat = 0.0
     
     // The scroll view that you want to manage, make sure it has only one subview
     private weak var scrollView: UIScrollView?
@@ -98,7 +101,7 @@ public class ScrollingFormHelper {
         
         var scrollPosition = view.getOriginRelativeTo(
             view: scrollView
-        ).y + view.frame.height - keyboardHeightFromTop
+        ).y + view.frame.height - keyboardHeightFromTop + customOffset
         if scrollPosition < 0 {
             scrollPosition = 0
         }
@@ -106,7 +109,7 @@ public class ScrollingFormHelper {
         let newInsets = UIEdgeInsets(
             top: scrollView.contentInset.top,
             left: scrollView.contentInset.left,
-            bottom: contentInset,
+            bottom: contentInset + customOffset,
             right: scrollView.contentInset.right
         )
         DispatchQueue.main.async {
