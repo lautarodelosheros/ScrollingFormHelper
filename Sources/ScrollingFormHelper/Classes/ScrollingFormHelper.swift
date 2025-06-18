@@ -81,23 +81,11 @@ public class ScrollingFormHelper {
     
     private func scrollTo(view: UIView) {
         guard let scrollView = scrollView,
-              let lastItem = scrollView.subviews.first?.subviews.last,
               keyboardHeight > 0
         else {
             return
         }
         let keyboardHeightFromTop = scrollView.frame.height - keyboardHeight
-        
-        let scrollViewEmptySpaceFromBottom = scrollView.frame.height - scrollView.contentSize.height
-        let contentViewLastItemMaxY = view.convert(
-            lastItem.frame.origin,
-            to: scrollView
-        ).y + lastItem.frame.height + scrollViewEmptySpaceFromBottom
-        
-        var contentInset = min(keyboardHeight, contentViewLastItemMaxY - keyboardHeightFromTop)
-        if contentInset < 0 {
-            contentInset = 0
-        }
         
         var scrollPosition = view.getOriginRelativeTo(
             view: scrollView
@@ -109,7 +97,7 @@ public class ScrollingFormHelper {
         let newInsets = UIEdgeInsets(
             top: scrollView.contentInset.top,
             left: scrollView.contentInset.left,
-            bottom: contentInset + customOffset,
+            bottom: keyboardHeight + customOffset,
             right: scrollView.contentInset.right
         )
         DispatchQueue.main.async {
