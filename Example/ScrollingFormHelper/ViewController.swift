@@ -11,7 +11,7 @@ import ScrollingFormHelper
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var scrollView: KeyboardAwareScrollView!
     @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var textField1: UITextField!
     @IBOutlet weak var textField2: UITextField!
@@ -34,15 +34,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var textField19: UITextField!
     @IBOutlet weak var textField20: UITextField!
     
-    var scrollingFormHelper: ScrollingFormHelper?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        scrollingFormHelper = ScrollingFormHelper(
-            scrollView: scrollView,
-            shouldDismissKeyboardOnTap: true
-        )
         setupTextFields()
     }
     
@@ -73,6 +67,6 @@ class ViewController: UIViewController {
 extension ViewController: UITextFieldDelegate {
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        scrollingFormHelper?.currentView = textField
+        scrollView.currentView = textField
     }
 }

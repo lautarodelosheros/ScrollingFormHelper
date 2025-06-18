@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		135F1D16C0B0CB9AD5ABA4C2147247AA /* NonScrollingFormHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9240AEBB5502E10C6AF0D0F9CBB598 /* NonScrollingFormHelper.swift */; };
 		1B49254B06305D47E33E6E4E0C40AB78 /* ScrollingFormHelper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82676CAFDEB019F1545B4733FA2AB535 /* ScrollingFormHelper-dummy.m */; };
 		1F2AEAB1D9BF28282770F104E3C8643B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		37B6DC2B7392D486CADEFE24566B72F2 /* Pods-ScrollingFormHelper_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 14DDE2B0C9B9F2E640E491BAAA46CBF4 /* Pods-ScrollingFormHelper_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -17,7 +16,7 @@
 		B11D83AAD583E52B57F827265AB7B48E /* Pods-ScrollingFormHelper_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5788FA4B0BBEDA51EF794B26B2E2D32D /* Pods-ScrollingFormHelper_Example-dummy.m */; };
 		B254613BDCCBD7919D62C85BFFC0BD1B /* ScrollingFormHelper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E90AB1A9CB017B49AA2B0C219C13047C /* ScrollingFormHelper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E0A705F414376BF89977F4B9C1FA7E45 /* Pods-ScrollingFormHelper_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 406F1BF3B244E432B823C32F6F024797 /* Pods-ScrollingFormHelper_Tests-dummy.m */; };
-		F19D3351F20D553B89BC18377567C2EC /* ScrollingFormHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413973456A16E31D5A104E13A073A70E /* ScrollingFormHelper.swift */; };
+		F19D3351F20D553B89BC18377567C2EC /* KeyboardAwareScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413973456A16E31D5A104E13A073A70E /* KeyboardAwareScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,23 +45,22 @@
 		37C074C3ED4303B3E5493C6D33D7852F /* ScrollingFormHelper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ScrollingFormHelper.modulemap; sourceTree = "<group>"; };
 		3EF0746ED0CD18567AE222695008BC9D /* Pods-ScrollingFormHelper_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScrollingFormHelper_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		406F1BF3B244E432B823C32F6F024797 /* Pods-ScrollingFormHelper_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ScrollingFormHelper_Tests-dummy.m"; sourceTree = "<group>"; };
-		413973456A16E31D5A104E13A073A70E /* ScrollingFormHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollingFormHelper.swift; path = Sources/ScrollingFormHelper/Classes/ScrollingFormHelper.swift; sourceTree = "<group>"; };
-		432F0F8C16CDB5F16ADEB84A6B80AD03 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		413973456A16E31D5A104E13A073A70E /* KeyboardAwareScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardAwareScrollView.swift; path = Sources/ScrollingFormHelper/Classes/KeyboardAwareScrollView.swift; sourceTree = "<group>"; };
+		432F0F8C16CDB5F16ADEB84A6B80AD03 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		49D825F2BC829CE47D0FDD54905BFDDE /* Pods-ScrollingFormHelper_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ScrollingFormHelper_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		52E590FF970102D5EF4794F100F0B504 /* ScrollingFormHelper.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ScrollingFormHelper.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		559043459A33C2A7447960D58C4E7343 /* Pods-ScrollingFormHelper_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ScrollingFormHelper_Example"; path = Pods_ScrollingFormHelper_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52E590FF970102D5EF4794F100F0B504 /* ScrollingFormHelper.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ScrollingFormHelper.podspec; sourceTree = "<group>"; tabWidth = 2; };
+		559043459A33C2A7447960D58C4E7343 /* Pods_ScrollingFormHelper_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScrollingFormHelper_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5788FA4B0BBEDA51EF794B26B2E2D32D /* Pods-ScrollingFormHelper_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ScrollingFormHelper_Example-dummy.m"; sourceTree = "<group>"; };
 		5C8A4ECBFF92186218BD8AD12D375EC4 /* Pods-ScrollingFormHelper_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScrollingFormHelper_Example.release.xcconfig"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7BD849C9FCFD8C59CFFB554E65AF1ABF /* Pods-ScrollingFormHelper_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ScrollingFormHelper_Tests"; path = Pods_ScrollingFormHelper_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BD849C9FCFD8C59CFFB554E65AF1ABF /* Pods_ScrollingFormHelper_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScrollingFormHelper_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80BB735E86DE9D973537A3A43C7E5CB5 /* Pods-ScrollingFormHelper_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScrollingFormHelper_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		82676CAFDEB019F1545B4733FA2AB535 /* ScrollingFormHelper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ScrollingFormHelper-dummy.m"; sourceTree = "<group>"; };
 		9377CA84B1CE96519224FFD8B6CB07EE /* Pods-ScrollingFormHelper_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ScrollingFormHelper_Tests.modulemap"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B0236EE9C94388A81C1A88CEDF896865 /* ScrollingFormHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ScrollingFormHelper.debug.xcconfig; sourceTree = "<group>"; };
-		BB9240AEBB5502E10C6AF0D0F9CBB598 /* NonScrollingFormHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NonScrollingFormHelper.swift; path = Sources/ScrollingFormHelper/Classes/NonScrollingFormHelper.swift; sourceTree = "<group>"; };
 		C159BD3892207E92EE10F601AE3FD5A5 /* ScrollingFormHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ScrollingFormHelper.release.xcconfig; sourceTree = "<group>"; };
-		C4070AADEDABF3C1FA3104B595A24FCB /* ScrollingFormHelper */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ScrollingFormHelper; path = ScrollingFormHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4070AADEDABF3C1FA3104B595A24FCB /* ScrollingFormHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ScrollingFormHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB1C81DAA0315BC42FD29F2F63C6561C /* Pods-ScrollingFormHelper_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ScrollingFormHelper_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		CDAE5473AB65BA65EC050972AACCF068 /* Pods-ScrollingFormHelper_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ScrollingFormHelper_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D22EE21706D971B81970C8BD58F4CCF0 /* Pods-ScrollingFormHelper_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ScrollingFormHelper_Tests-Info.plist"; sourceTree = "<group>"; };
@@ -71,7 +69,7 @@
 		E90AB1A9CB017B49AA2B0C219C13047C /* ScrollingFormHelper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ScrollingFormHelper-umbrella.h"; sourceTree = "<group>"; };
 		EA78398C80D48FD31BEFD2EECFF16326 /* ScrollingFormHelper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ScrollingFormHelper-prefix.pch"; sourceTree = "<group>"; };
 		F148A2FFA5D017DB5A58848DC2D6D6B4 /* Pods-ScrollingFormHelper_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ScrollingFormHelper_Example.modulemap"; sourceTree = "<group>"; };
-		F2508B3CBC83BF95C4A60B6541D1877F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		F2508B3CBC83BF95C4A60B6541D1877F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,8 +119,7 @@
 		49945D995BBCC55390B44DDAA902AA59 /* ScrollingFormHelper */ = {
 			isa = PBXGroup;
 			children = (
-				BB9240AEBB5502E10C6AF0D0F9CBB598 /* NonScrollingFormHelper.swift */,
-				413973456A16E31D5A104E13A073A70E /* ScrollingFormHelper.swift */,
+				413973456A16E31D5A104E13A073A70E /* KeyboardAwareScrollView.swift */,
 				7CC1288C23380C341E9A3B4F34DBE3F2 /* Pod */,
 				EC5B356C35D67D8F48555464102E52FC /* Support Files */,
 			);
@@ -160,9 +157,9 @@
 		B2E76A83C31859C4B65A173163199FEB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				559043459A33C2A7447960D58C4E7343 /* Pods-ScrollingFormHelper_Example */,
-				7BD849C9FCFD8C59CFFB554E65AF1ABF /* Pods-ScrollingFormHelper_Tests */,
-				C4070AADEDABF3C1FA3104B595A24FCB /* ScrollingFormHelper */,
+				559043459A33C2A7447960D58C4E7343 /* Pods_ScrollingFormHelper_Example.framework */,
+				7BD849C9FCFD8C59CFFB554E65AF1ABF /* Pods_ScrollingFormHelper_Tests.framework */,
+				C4070AADEDABF3C1FA3104B595A24FCB /* ScrollingFormHelper.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -272,7 +269,7 @@
 			);
 			name = "Pods-ScrollingFormHelper_Tests";
 			productName = Pods_ScrollingFormHelper_Tests;
-			productReference = 7BD849C9FCFD8C59CFFB554E65AF1ABF /* Pods-ScrollingFormHelper_Tests */;
+			productReference = 7BD849C9FCFD8C59CFFB554E65AF1ABF /* Pods_ScrollingFormHelper_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		67B37BB9EA4A4F354DA473AEC63CC955 /* Pods-ScrollingFormHelper_Example */ = {
@@ -291,7 +288,7 @@
 			);
 			name = "Pods-ScrollingFormHelper_Example";
 			productName = Pods_ScrollingFormHelper_Example;
-			productReference = 559043459A33C2A7447960D58C4E7343 /* Pods-ScrollingFormHelper_Example */;
+			productReference = 559043459A33C2A7447960D58C4E7343 /* Pods_ScrollingFormHelper_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		E036651F1ED36A2EB1A67742D24EDE44 /* ScrollingFormHelper */ = {
@@ -309,7 +306,7 @@
 			);
 			name = ScrollingFormHelper;
 			productName = ScrollingFormHelper;
-			productReference = C4070AADEDABF3C1FA3104B595A24FCB /* ScrollingFormHelper */;
+			productReference = C4070AADEDABF3C1FA3104B595A24FCB /* ScrollingFormHelper.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -370,8 +367,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				135F1D16C0B0CB9AD5ABA4C2147247AA /* NonScrollingFormHelper.swift in Sources */,
-				F19D3351F20D553B89BC18377567C2EC /* ScrollingFormHelper.swift in Sources */,
+				F19D3351F20D553B89BC18377567C2EC /* KeyboardAwareScrollView.swift in Sources */,
 				1B49254B06305D47E33E6E4E0C40AB78 /* ScrollingFormHelper-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -691,8 +687,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
