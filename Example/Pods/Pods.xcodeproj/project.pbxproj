@@ -16,7 +16,7 @@
 		B11D83AAD583E52B57F827265AB7B48E /* Pods-ScrollingFormHelper_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5788FA4B0BBEDA51EF794B26B2E2D32D /* Pods-ScrollingFormHelper_Example-dummy.m */; };
 		B254613BDCCBD7919D62C85BFFC0BD1B /* ScrollingFormHelper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E90AB1A9CB017B49AA2B0C219C13047C /* ScrollingFormHelper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E0A705F414376BF89977F4B9C1FA7E45 /* Pods-ScrollingFormHelper_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 406F1BF3B244E432B823C32F6F024797 /* Pods-ScrollingFormHelper_Tests-dummy.m */; };
-		F19D3351F20D553B89BC18377567C2EC /* ScrollingFormHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413973456A16E31D5A104E13A073A70E /* ScrollingFormHelper.swift */; };
+		F19D3351F20D553B89BC18377567C2EC /* KeyboardAwareScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413973456A16E31D5A104E13A073A70E /* KeyboardAwareScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +45,7 @@
 		37C074C3ED4303B3E5493C6D33D7852F /* ScrollingFormHelper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ScrollingFormHelper.modulemap; sourceTree = "<group>"; };
 		3EF0746ED0CD18567AE222695008BC9D /* Pods-ScrollingFormHelper_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScrollingFormHelper_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		406F1BF3B244E432B823C32F6F024797 /* Pods-ScrollingFormHelper_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ScrollingFormHelper_Tests-dummy.m"; sourceTree = "<group>"; };
-		413973456A16E31D5A104E13A073A70E /* ScrollingFormHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollingFormHelper.swift; path = Sources/ScrollingFormHelper/Classes/ScrollingFormHelper.swift; sourceTree = "<group>"; };
+		413973456A16E31D5A104E13A073A70E /* KeyboardAwareScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardAwareScrollView.swift; path = Sources/ScrollingFormHelper/Classes/KeyboardAwareScrollView.swift; sourceTree = "<group>"; };
 		432F0F8C16CDB5F16ADEB84A6B80AD03 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		49D825F2BC829CE47D0FDD54905BFDDE /* Pods-ScrollingFormHelper_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ScrollingFormHelper_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		52E590FF970102D5EF4794F100F0B504 /* ScrollingFormHelper.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ScrollingFormHelper.podspec; sourceTree = "<group>"; tabWidth = 2; };
@@ -119,7 +119,7 @@
 		49945D995BBCC55390B44DDAA902AA59 /* ScrollingFormHelper */ = {
 			isa = PBXGroup;
 			children = (
-				413973456A16E31D5A104E13A073A70E /* ScrollingFormHelper.swift */,
+				413973456A16E31D5A104E13A073A70E /* KeyboardAwareScrollView.swift */,
 				7CC1288C23380C341E9A3B4F34DBE3F2 /* Pod */,
 				EC5B356C35D67D8F48555464102E52FC /* Support Files */,
 			);
@@ -367,7 +367,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F19D3351F20D553B89BC18377567C2EC /* ScrollingFormHelper.swift in Sources */,
+				F19D3351F20D553B89BC18377567C2EC /* KeyboardAwareScrollView.swift in Sources */,
 				1B49254B06305D47E33E6E4E0C40AB78 /* ScrollingFormHelper-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
