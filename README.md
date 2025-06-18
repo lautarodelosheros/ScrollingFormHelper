@@ -25,23 +25,23 @@ pod 'ScrollingFormHelper'
 
 ## Usage
 
-Initialize an instance of ScrollingFormHelper on the view controller's viewDidLoad method:
+Set the class of your UIScrollView to KeyboardAwareScrollView. Then, whenever you want to focus on a view that presents the keyboard, set the currentView attribute of KeyboardAwareScrollView to that view.
+
+For example, let's say you have a UITextField inside a KeyboardAwareScrollView:
 
 ```swift
 override func viewDidLoad() {
     super.viewDidLoad()
-    
-    scrollingFormHelper = ScrollingFormHelper(scrollView: scrollView, shouldDismissKeyboardOnTap: true)
     textField.delegate = self
 }
 ```
 
-Then set the currentTextField attribute on textFieldDidBeginEditing (You need to set the delegate for each one of your text fields):
+Then set the currentView attribute on textFieldDidBeginEditing:
 
 ```swift
 extension ViewController: UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        scrollingFormHelper?.currentView = textField
+        keyboardAwareScrollView.currentView = textField
     }
 }
 ```
